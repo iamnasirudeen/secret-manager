@@ -5,7 +5,7 @@ import {
   updateSecret,
   viewSecrets,
   viewSingleSecret,
-} from "../controllers/secret.controller";
+} from "../controllers";
 import { validateAuthToken } from "../middlewares/auth.middleware";
 const router = Router();
 

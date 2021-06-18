@@ -18,7 +18,7 @@ export async function createSecret(req: IReq, res: Response) {
       encryptedData,
     },
     userId: req.user?.id,
-    expirationDate: moment().add(1, "year"),
+    expirationDate: moment().add(1, "year").toDate(),
   };
 
   await Secret.create(payload);
