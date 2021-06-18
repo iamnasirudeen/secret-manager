@@ -9,7 +9,7 @@ async function ExpireSecrets(): Promise<void> {
 }
 
 const SecretCron = cron.schedule(
-  "*/10 * * * *",
+  "0 0 0 * * *",
   async () => {
     await ExpireSecrets();
   },
